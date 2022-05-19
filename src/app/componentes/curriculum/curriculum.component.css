@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: rgb(232, 240, 245);
+    text-align: center; 
+    width: 100%;
+    margin-left: 150px;
+   border: 1px solid black;    
+
+}
+
+.grid-container-c{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.grid1-c{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+   border-radius: 20px;
+   margin: 25px;
+  color: azure;
+   background: rgba(110,134, 156, 1);
+
+}
+.foto img{ 
+    width: 170px;
+    height: 160px;
+    margin-top: 30px;
+    margin-left: 5px;
+    border-radius: 400px ;
+
+} 
+
+.caja1-c{
+   padding: 20px;
+
+}
+
+.grid2-c{
+    
+    display: grid;
+    grid-template-rows: 130px 1fr 1fr ;
+    gap: 20px;
+}
+.caja3-c
+ h1{
+   font-size: 40px;
+    padding-top: 50px;
+}
+
+
+.cajas4-5-c{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.caja4-c{
+   width: 190px;
+   height: 190px;
+   padding: 20px;
+   border-radius: 20px;
+   margin-top: 120px;
+   margin-left: 20px;
+   color: azure;
+   background: rgba(71, 92, 106,1);
+   
+
+}
+.caja5-c{
+  
+    width: 220px;
+    height: 320px;
+    padding: 25px;
+    margin-top: 70px;
+    border-radius: 20px;
+   
+    color: azure;
+    background: rgba(71, 92, 106,1);
+
+}
+
+.caja6-c{
+    
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    color: azure;
+    margin-bottom: 20px;
+    background: rgba(71, 92, 106,1);
+
+}

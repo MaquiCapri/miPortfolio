@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
 
 
@@ -10,13 +11,20 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
 export class ContainerComponent implements OnInit {
  container: any;
 
-  constructor(private datosPorfolio: PorfolioService) { }
+  constructor(private datosPorfolio: PorfolioService, private router:Router) { }
+  
+  irCurriculum(){
+    this.router.navigate(['curriculum']);
+  }
+
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data=>{
       console.log(data);
       this.container=data;
     });
+
+   
   }
 
 

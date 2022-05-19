@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
 
 @Component({
@@ -8,7 +9,13 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
 })
 export class EncabezadoComponent implements OnInit {
  miPortfolio:any;
-  constructor(private datosPorfolio: PorfolioService) { }
+
+  
+  constructor(private datosPorfolio: PorfolioService,private router:Router) { }
+
+  irLogin(){
+    this.router.navigate(['login']);
+  }
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data=>{
