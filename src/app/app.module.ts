@@ -16,7 +16,8 @@ import { InputMailComponent } from './componentes/input-mail/input-mail.componen
 import { InputGithubComponent } from './componentes/input-github/input-github.component';
 import { InputlinkedinComponent } from './componentes/inputlinkedin/inputlinkedin.component';
 
-
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { CircleProgressComponent } from './componentes/circle-progress/circle-progress.component';
 
 
 
@@ -31,14 +32,15 @@ import { InputlinkedinComponent } from './componentes/inputlinkedin/inputlinkedi
     InputLoginComponent,
     InputMailComponent,
     InputGithubComponent,
-    InputlinkedinComponent
+    InputlinkedinComponent,
+    CircleProgressComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-   
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
