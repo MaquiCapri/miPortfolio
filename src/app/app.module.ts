@@ -18,6 +18,7 @@ import { InputlinkedinComponent } from './componentes/inputlinkedin/inputlinkedi
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { CircleProgressComponent } from './componentes/circle-progress/circle-progress.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 
 
@@ -33,7 +34,8 @@ import { CircleProgressComponent } from './componentes/circle-progress/circle-pr
     InputMailComponent,
     InputGithubComponent,
     InputlinkedinComponent,
-    CircleProgressComponent
+    CircleProgressComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

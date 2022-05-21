@@ -1,0 +1,24 @@
+
+<div class="container">
+    <h2>Registro</h2>
+    <p>
+     <span>Nombre: </span><br>
+     <input type="text" [(ngModel)]="cliente.nombre" >
+    </p>
+    <p>
+     <span>Apellido: </span><br>
+     <input type="text" [(ngModel)]="cliente.apellido">
+    </p>
+    
+    <p>
+     <span>Correo: </span><br>
+     <input type="text" [(ngModel)]="cliente.correo">
+    </p>
+  
+    
+    <p>
+     <button (click)="this.nuevoCliente()" class="btn btn-secondary">guardar</button>
+    </p>
+    
+
+</div>
