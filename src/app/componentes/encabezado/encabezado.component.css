@@ -1,83 +1,103 @@
-header{
-    height: 50%;
-    position: relative;
-}
 
-.top{
+
+/* .grid-container{ 
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+   
+ } 
+
+.cajas1-2{
+    grid-template-columns: 1fr 1fr;
+ 
+    
+     } */
+
+.row  {
     background-color: rgb(136, 135, 135);
-    border:1px solid black;
-    height: 65px;
-}
-.top img{
+    border:1px solid  rgb(23,32,42);
+    height: 65px; 
+    width: 900px;
+    margin-left:-20px ;
+   
+    }
+
+.row img{
    margin-left: 40px;
    margin-top: 10px;
    width: 100px;
    height: 50px;
    box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
+  
 }
 
-.login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 20px;
-    margin-left: 850px; 
-    margin-top: -40px;
-    margin-bottom: 10px;
-    background: rgb(23,32,42);;
-    color: #fcfcfc;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-     transition: 1s ease all; 
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
 
 
-}
 
-.login span{
-position: relative;
-z-index: 2;
+  
+   .row .login{
+       /* display: flex; 
+       align-items: center;
+        justify-content: center; */
+       width: 100px;
+       height: 30px;
+     margin-left: 280px;
+    margin-top: 20px;
+       background: rgb(23,32,42); 
+       color: #fcfcfc;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 17px;
+       border: none; 
+       cursor: pointer;
+       text-transform: uppercase;
+        transition: 1s ease all; 
+       border-radius: 5px;
+       position: relative;
+       overflow: hidden;
+       box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
+  
+  }
+  
+  .row .login span{
+  position: relative;
+  z-index: 2;
+   
+  }
+  
+  .row .login::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(31, 97, 141);
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  transition: 1s ease all;   
+  
+  }
+  
+  .row .login:hover::after{
+  top: 0;
+  }
 
-}
-
-.login::after{
-content: "";
-width: 100%;
-height: 100%;
-background: rgb(31, 97, 141);
-position: absolute;
-z-index: 1;
-top: -80px;
-left: 0;
-
-
-}
-
-.login:hover::after{
-    top: 0;
-}
-
-   .grid{
-       display:grid;
-     grid-template-columns: 1fr 2fr;
+   .caja2 .rowa{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+     width: 95%;
      height: 220px;
-      border: 1px solid rgb(23,32,42);;
+  
+     border: 3px solid rgb(23,32,42);
       background-image: url("/assets/fondoAzu.png");
-}
+      padding: 20px;
+      border-radius: 400px ;
+      margin: 15px;
+  }
  
   
-      .grid1 img{ 
+    .caja2 .foto img{ 
         width: 170px;
         height: 160px;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-left: 70px;
     border-radius: 400px ;
     box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
@@ -85,8 +105,8 @@ left: 0;
     } 
 
 
-.grid2{
-        height: 58%;
+.caja2 .nombre{
+         height: 58%; 
         width: 70%;
      
         box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.9);
@@ -96,30 +116,67 @@ left: 0;
        text-align: center;
         margin-top: 30px ;
         margin-left: 50px;
-    box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
+       box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
 
        }
     
-.grid2 h3{
+      .caja2 .nombre h3{
         font-size: 30px;
         font-family: 'Nunito', sans-serif;
         font-weight: 900;
        padding-top: 20px;
     }
 
-    .grid2 h4{
+   .caja2 .nombre  h4{
         font-family: 'Nunito', sans-serif;
          }
 
-         @media (max-width: 575px){
-             .login{
-                 margin-left: 340px;
+          
+           
+          @media (max-width: 583px){
+            .caja2 {
+               margin-right: 20px;
+               margin-top: 15px;
+               display: inline-flex;
              }
+             .caja2 .rowa{
+               margin: -5px;
+               width:97%;
+               
+              
+            }
+           
+             .caja1 { 
+              margin-right: 20px;
+              margin-top: 15px;
+              width: 500px;
+             } 
+            .caja2 .foto img{
+              margin-left: -25px;
+              margin-bottom: 20px;
+              width: 150px;
+              height: 140px;
+            }
 
-             .grid1 img{ 
-                 margin-left: 25px;
-             }
-             .grid2{
-                 height: 82%;
-             }
-         }
+            .caja2 .nombre{
+              padding-bottom: 20px;
+              text-align: center;
+              height: 60%;
+              width: 90%;
+              margin-left: 10px;
+              
+            }
+            .caja2 .nombre  h4{
+              font-size: 13px;
+               }
+               .caja2 .nombre  h3{
+                 font-size: 18px;
+               }
+
+               .row .login{
+                 margin-top: -600px;
+                 width: 60px;
+                 margin-left: 350px;
+               }
+
+      }

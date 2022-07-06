@@ -8,7 +8,7 @@
 .contacto {
     width: 80%;
     height: 70%;
-    border:4px solid black;
+    border:4px solid rgb(23,32,42);
     text-align: center;
     padding-top: 10px;
     color: #1b1a1a;
@@ -42,9 +42,26 @@
 
 .contacto .logo img{
     width: 60px;
-    height: 30px; 
+    height: 30px;
+    
 
   }
+
+  .logoCopy img{
+    width: 20px;
+    height: 20px; 
+   
+  }
+
+  .logoCopy{
+      text-align: center;
+      color: #fefefe;
+  }
+
+      p{ 
+       text-align: center; 
+      color: #fefefe;
+      } 
 
   @media (max-width: 575px){
        

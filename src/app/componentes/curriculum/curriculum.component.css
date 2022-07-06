@@ -5,10 +5,10 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    background: rgb(232, 240, 245);
+    background: rgb(254, 249, 231);
     text-align: center; 
     width: 100%;
-    margin-left: 150px;
+    
    border: 1px solid black;    
 
 }
@@ -23,9 +23,10 @@ body{
     grid-template-rows: 1fr 1fr 1fr;
    border-radius: 20px;
    margin: 25px;
-  color: azure;
-   background: rgba(110,134, 156, 1);
-
+  /* color: azure; */
+   background: rgb(249,231,159);
+color: rgb(23, 32, 42);
+box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
 }
 .foto img{ 
     width: 170px;
@@ -38,8 +39,7 @@ body{
 
 .caja1-c{
    padding: 20px;
-
-}
+   }
 
 .grid2-c{
     
@@ -51,6 +51,7 @@ body{
  h1{
    font-size: 40px;
     padding-top: 50px;
+ 
 }
 
 
@@ -67,8 +68,10 @@ body{
    border-radius: 20px;
    margin-top: 120px;
    margin-left: 20px;
-   color: azure;
-   background: rgba(71, 92, 106,1);
+   /* color: azure; */
+   background: rgb(247, 220, 111);
+color: rgb(23, 32, 42);
+box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
    
 
 }
@@ -79,9 +82,13 @@ body{
     padding: 25px;
     margin-top: 70px;
     border-radius: 20px;
+color: rgb(23, 32, 42);
    
-    color: azure;
-    background: rgba(71, 92, 106,1);
+    /* color: azure; */
+    background: rgb(247, 220, 111);
+    box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
+   
+    
 
 }
 
@@ -91,8 +98,36 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
-    color: azure;
+    /* color: azure; */
     margin-bottom: 20px;
-    background: rgba(71, 92, 106,1);
+   background: rgb(247, 220, 111);
+   color: rgb(23, 32, 42);
+   box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
 
 }
+
+.boton{
+    border-radius: 5px;
+    cursor: pointer;
+  background:rgb(183, 149, 11);
+   /* color: azure; */
+  width: 70px;
+ margin-bottom: 10px;
+ border:3px solid rgb(125,102,8);
+ color: rgb(23, 32, 42);
+ box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
+ }
+
+ .botonVolver{
+     margin-left: 680px;
+  
+
+ }
+
+ @media (max-width: 583px){
+     .grid-container-c{
+  display: block;
+     }    
+ }
+
+

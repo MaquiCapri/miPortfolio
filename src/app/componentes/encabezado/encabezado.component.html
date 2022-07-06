@@ -1,22 +1,26 @@
 
-<header>
-    <nav class="top">
+<header class="container">
+   
+     <div class=" row ">
   
       
-       <img [src]="miPortfolio.image" alt="logo arg.programa">
+             <div class=" col-xs-6 col-sm-6 col-lg-6 " ><img [src]="miPortfolio.image" alt="logo arg.programa" ></div>
         
-       <button class="login" (click)="irLogin()"><span>Login</span></button>
+             <div class="  col-xs-6 col-sm-6 col-lg-6"> <button type="button" class="login" (click)="irLogin()"><span>Login</span></button></div>
       
-    </nav>
+     </div>
     
-    <div class="grid">
-        <div class="grid1"><img [src]="miPortfolio.imgFoto" alt="foto"></div>
-        <div class="grid2">
-            <h3>{{miPortfolio.name}}</h3> 
-            <h4>{{miPortfolio.position}}</h4>
+    
+   <nav class="caja2 " >
+        <div class="rowa" >
+             <div class="foto "><img [src]="miPortfolio.imgFoto" alt="foto"></div>
+            <div class="nombre  ">
+                <h3>{{miPortfolio.name}}</h3>
+                   <h4> {{miPortfolio.position}}</h4> 
+                
             
-        </div>
-       
-   </div>
-  </header>
+         </div>
+       </div>
+    </nav>
+</header>
   

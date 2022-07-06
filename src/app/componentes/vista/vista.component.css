@@ -1,4 +1,15 @@
 body{
-    width: 100%;
-    height: 100%;
+  
+     width: 100%; 
+     height: 100%; 
+       background: rgba(110, 175, 164,1);
+    
 }
+
+ /* @media (max-width: 583px){  */
+   /* body{ 
+    width: 100%; 
+     height: 100%; 
+ } 
+ } */
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./curriculum.component.css']
 })
 export class CurriculumComponent implements OnInit {
+  
 
-  constructor() { }
-
+  constructor( private router:Router) { }
+  volverCurriculum(){
+    this.router.navigate(['']);
+  }
   ngOnInit(): void {
   }
 

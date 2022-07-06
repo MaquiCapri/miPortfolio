@@ -1,4 +1,310 @@
 .row{
-    display: inline-block;
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+    /* display: inline-block; */
     text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+     transition: 1s ease all; 
+    
+    position: relative;
+    overflow: hidden;
+   
 }
+
+
+
+.html .content {
+     width: 100%; 
+    height: 100%;
+     display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     background: #117A65; 
+    /* background: #A2D9CE; */
+     opacity: 0; 
+    transition: .5s;
+   margin-top: -94px;
+   border-radius: 20px;
+   text-align:center;
+    
+}
+
+ .html .content h2 {
+    color:rgb(8, 8, 8);
+    font-size: 24px;
+    font-weight: 900;
+
+ 
+}
+
+.html .content p{
+    color:rgb(22, 21, 22);
+ font-size: 16px;
+ font-weight: 900;
+
+
+}
+
+.html:hover .content{
+    opacity: 1;
+}
+
+
+.css3 .content {
+    width: 100%; 
+   height: 100%;
+    display: flex; 
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: #117A65; 
+    opacity: 0; 
+   transition: .5s;
+  margin-top: -94px;
+  border-radius: 20px;
+  text-align:center;
+   
+}
+
+.css3 .content h2 {
+   color:rgb(8, 8, 8);
+   font-size: 24px;
+   font-weight: 900;
+
+
+}
+
+.css3 .content p{
+   color:rgb(22, 21, 22);
+font-size: 16px;
+font-weight: 900;
+
+}
+
+.css3:hover .content{
+   opacity: 1;
+}
+
+.github .content {
+    width: 100%; 
+   height: 100%;
+    display: flex; 
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    background: #117A65; 
+   /* background: #A2D9CE; */
+    opacity: 0; 
+   transition: .5s;
+  margin-top: -94px;
+  border-radius: 20px;
+  text-align:center;
+   
+}
+
+.github .content h2 {
+   color:rgb(8, 8, 8);
+   font-size: 24px;
+   font-weight: 900;
+
+
+}
+
+.github .content p{
+   color:rgb(22, 21, 22);
+font-size: 16px;
+font-weight: 900;
+
+}
+
+.github:hover .content{
+   opacity: 1;
+}
+
+
+.angular .content {
+   width: 100%; 
+  height: 100%;
+   display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: #117A65; */
+  background: #117A65; 
+
+  
+   opacity: 0; 
+  transition: .5s;
+ margin-top: -94px;
+ border-radius: 20px;
+ text-align:center;
+  
+}
+
+.angular .content h2 {
+  color:rgb(8, 8, 8);
+  font-size: 24px;
+  font-weight: 900;
+
+
+}
+
+.angular .content p{
+  color:rgb(22, 21, 22);
+font-size: 16px;
+font-weight: 900;
+
+}
+
+.angular:hover .content{
+  opacity: 1;
+}
+
+.bootstrap .content {
+    width: 100%; 
+   height: 100%;
+    display: flex; 
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    background: #117A65; 
+   /* background: #A2D9CE; */
+    opacity: 0; 
+   transition: .5s;
+  margin-top: -94px;
+  border-radius: 20px;
+  text-align:center;
+   
+}
+
+.bootstrap .content h2 {
+   color:rgb(7, 6, 6);
+   font-size: 18px;
+   font-weight: 900;
+
+
+}
+
+.bootstrap .content p{
+   color:rgb(8, 8, 8);
+font-size: 16px;
+font-weight: 900;
+
+}
+
+.bootstrap:hover .content{
+   opacity: 1;
+}
+
+
+.figma .content {
+   width: 100%; 
+  height: 100%;
+   display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: #117A65; */
+  
+  background: #117A65; 
+
+   opacity: 0; 
+  transition: .5s;
+ margin-top: -94px;
+ border-radius: 20px;
+ text-align:center;
+  
+}
+
+.figma .content h2 {
+  color:rgb(8, 8, 8);
+  font-size: 24px;
+  font-weight: 900;
+
+
+}
+
+.figma .content p{
+  color:rgb(22, 21, 22);
+font-size: 16px;
+font-weight: 900;
+
+
+}
+
+.figma:hover .content{
+  opacity: 1;
+}
+
+.js .content {
+    width: 100%; 
+   height: 100%;
+    display: flex; 
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    background: #117A65; 
+   /* background: #A2D9CE; */
+    opacity: 0; 
+   transition: .5s;
+  margin-top: -90px;
+  border-radius: 20px;
+  text-align:center;
+   
+}
+
+.js .content h2 {
+   color:rgb(8, 8, 8);
+   font-size: 18px;
+   font-weight: 900;
+
+
+}
+
+.js .content p{
+   color:rgb(22, 21, 22);
+font-size: 16px;
+font-weight: 900;
+
+}
+
+.js:hover .content{
+   opacity: 1;
+}
+
+
+/* .css3 .content { 
+   width: 100%; 
+  height: 100%;
+   display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: #117A65; 
+  background: #A2D9CE;
+   opacity: 0; 
+  transition: .5s;
+ margin-top: -98px;
+ border-radius: 20px;
+ text-align:center;
+  
+}
+
+.css3.content h2 {
+  color:rgb(8, 8, 8);
+  font-size: 24px;
+
+
+}
+
+.css3.content p{
+  color:rgb(22, 21, 22);
+font-size: 16px;
+
+}
+
+.css3:hover .content{
+  opacity: 1;
+ } */
