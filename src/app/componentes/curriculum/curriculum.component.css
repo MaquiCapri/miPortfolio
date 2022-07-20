@@ -5,11 +5,11 @@
 
 body{
     font-family: 'Nunito', sans-serif;
-    background: rgb(254, 249, 231);
-    text-align: center; 
+    /* background: rgb(254, 249, 231); */
+     background: rgb(169, 204, 227); 
+     text-align: center; 
     width: 100%;
-    
-   border: 1px solid black;    
+    border: 1px solid black;    
 
 }
 
@@ -23,9 +23,9 @@ body{
     grid-template-rows: 1fr 1fr 1fr;
    border-radius: 20px;
    margin: 25px;
-  /* color: azure; */
-   background: rgb(249,231,159);
-color: rgb(23, 32, 42);
+   color: azure; 
+   background: rgb(31,97,141);
+/* color: rgb(23, 32, 42); */
 box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
 }
 .foto img{ 
@@ -68,9 +68,9 @@ box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
    border-radius: 20px;
    margin-top: 120px;
    margin-left: 20px;
-   /* color: azure; */
-   background: rgb(247, 220, 111);
-color: rgb(23, 32, 42);
+   color: azure; 
+   background: rgb(84, 153, 199);
+/* color: rgb(23, 32, 42); */
 box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
    
 
@@ -82,10 +82,10 @@ box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
     padding: 25px;
     margin-top: 70px;
     border-radius: 20px;
-color: rgb(23, 32, 42);
+/* color: rgb(23, 32, 42); */
    
-    /* color: azure; */
-    background: rgb(247, 220, 111);
+     color: azure; 
+    background: rgb(84, 153, 199);
     box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
    
     
@@ -98,10 +98,10 @@ color: rgb(23, 32, 42);
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
-    /* color: azure; */
+     color: azure; 
     margin-bottom: 20px;
-   background: rgb(247, 220, 111);
-   color: rgb(23, 32, 42);
+   background: rgb(84, 153, 199);
+  
    box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
 
 }
@@ -109,7 +109,9 @@ color: rgb(23, 32, 42);
 .boton{
     border-radius: 5px;
     cursor: pointer;
-  background:rgb(183, 149, 11);
+  /* background:rgb(183, 149, 11); */
+  background: rgb(31,97,141);
+
    /* color: azure; */
   width: 70px;
  margin-bottom: 10px;
@@ -127,7 +129,15 @@ color: rgb(23, 32, 42);
  @media (max-width: 583px){
      .grid-container-c{
   display: block;
-     }    
+     }   
+     
+     /* .caja3-c{ */
+    
+     /* } */
+
+    .body{
+      width: 530px;
+    }
  }
 
 
