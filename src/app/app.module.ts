@@ -42,7 +42,8 @@ import { LoginComponent } from './componentes/login/login.component';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

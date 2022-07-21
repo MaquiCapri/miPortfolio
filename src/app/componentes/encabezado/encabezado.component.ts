@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { subscribeOn } from 'rxjs';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
 
 @Component({
@@ -8,20 +11,25 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit {
- miPortfolio:any;
+  persona: persona = new persona("","","");
+ 
+   miPortfolio:any;
 
   
-  constructor(private datosPorfolio: PorfolioService,private router:Router) { }
-
+  constructor(private datosPorfolio: PorfolioService,private router:Router, public personaService: PersonaService) { }
+    
   irLogin(){
-    this.router.navigate(['login']);
+     // prueba de json
+    // this.router.navigate(['login']);
   }
 
-  ngOnInit(): void {
+   ngOnInit(): void {
+    this.personaService.getPersona().subscribe(data=>{this.persona = data})
+    
     this.datosPorfolio.obtenerDatos().subscribe(data=>{
-      console.log(data);
-      this.miPortfolio=data;
-    });
+       console.log(data);
+       this.miPortfolio=data;
+      });
   }
 
 }
