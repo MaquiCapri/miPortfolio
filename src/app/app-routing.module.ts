@@ -7,11 +7,12 @@ import { InputLoginComponent } from './componentes/input-login/input-login.compo
 import { InputGithubComponent } from './componentes/input-github/input-github.component';
 import { InputMailComponent } from './componentes/input-mail/input-mail.component';
 import { InputlinkedinComponent } from './componentes/inputlinkedin/inputlinkedin.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 const Routes:Routes=[
   {path:'', component: VistaComponent},
   {path: 'curriculum',component: CurriculumComponent},
-  {path: 'login',component: InputLoginComponent},
+  {path: 'login',component: LoginComponent},
   {path: 'github',component: InputGithubComponent},
   {path: 'mail',component: InputMailComponent},
   {path: 'linkedin',component: InputlinkedinComponent},

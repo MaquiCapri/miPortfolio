@@ -17,11 +17,10 @@ export class EncabezadoComponent implements OnInit {
 
   
   constructor(private datosPorfolio: PorfolioService,private router:Router, public personaService: PersonaService) { }
-    
   irLogin(){
-     // prueba de json
-    // this.router.navigate(['login']);
+    this.router.navigate(['login']);
   }
+  
 
    ngOnInit(): void {
     this.personaService.getPersona().subscribe(data=>{this.persona = data})
