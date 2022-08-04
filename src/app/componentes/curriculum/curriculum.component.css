@@ -120,11 +120,11 @@ box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
  box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
  }
 
- .botonVolver{
-     margin-left: 680px;
+  .botonVolver{ 
+      margin-left: 680px; 
   
 
- }
+  } 
 
  @media (max-width: 583px){
      .grid-container-c{

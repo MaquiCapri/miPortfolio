@@ -19,6 +19,9 @@ import { InputlinkedinComponent } from './componentes/inputlinkedin/inputlinkedi
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { CircleProgressComponent } from './componentes/circle-progress/circle-progress.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { ExperienciaComponent } from './experiencia/experiencia.component';
+import { NewExperienciaComponent } from './experiencia/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './experiencia/edit-experiencia/edit-experiencia.component';
 
 
 
@@ -35,7 +38,10 @@ import { LoginComponent } from './componentes/login/login.component';
     InputGithubComponent,
     InputlinkedinComponent,
     CircleProgressComponent,
-    LoginComponent
+    LoginComponent,
+    ExperienciaComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
