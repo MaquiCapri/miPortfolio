@@ -1,1 +1,37 @@
-<p>input-mail works!</p>
+<section class="vh-100" style="background-color: #641E16 ;">
+    <div class="container" class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+                        <form action="correos.php" method="POST">
+                            <div class="logo"><img src="./assets/mail.png" alt="logo correo"></div>
+
+                            <h3 class="mb-5">Contactame</h3>
+
+                            <div class="form-outline mb-4">
+                                <input type="text" id="" name="name" class="form-control form-control-lg" required />
+                                <label class="form-label" for="typePasswordX-2">Nombre</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="email" id="" name="email" class="form-control form-control-lg" required />
+                                <label class="form-label" for="typeEmailX-2">Email</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="text" id="" name="mensaje" class="form-control form-control-lg" required />
+                                <label class="form-label" for="typePasswordX-2">Mensaje</label>
+                            </div>
+
+                            <button class="btn btn-dark btn-lg btn-block" type="submit" (click)="volverPrincipal()">Enviar</button>
+
+                           
+                        </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>

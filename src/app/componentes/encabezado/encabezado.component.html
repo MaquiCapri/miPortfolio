@@ -1,32 +1,26 @@
-
 <header class="container">
-   
-     <div class=" row ">
-  
-      
-             <div class=" col-xs-6 col-sm-6 col-lg-6 " ><img [src]="miPortfolio.image" alt="logo arg.programa" ></div>
-        
-             <div class="  col-xs-6 col-sm-6 col-lg-6"> <button type="button" class="login" (click)="irLogin()"><span>Ingresar</span></button></div>
-      
-     </div>
-    
-    
-   <nav class="caja2 " >
-        <div class="rowa" >
-             <div class="foto "><img [src]="miPortfolio.imgFoto" alt="foto"></div>
-            <div class="nombre  ">
-               <!-- prueba de base de datos NetBeans, Postman, Msql -->
-                <h3>{{persona.nombre}} {{persona.apellido}}</h3>
-                <!-- prueba base de datos json -->
-                   <h4> {{miPortfolio.position}}</h4> 
-                
-            
-         </div>
-       </div>
-    </nav>
-    
-  
 
+   <div class="row">
+      <div class="col-xs-6 col-sm-6 col-lg-6 "><img [src]="miPortfolio.image" 
+         alt="logo arg.programa"></div>
+
+      <div  class="col-xs-6 col-sm-6 col-lg-6">
+         <div > <button type="button" class="login" (click)="irLogin()" *ngIf="!isLogged" ><span>Ingresar</span></button></div>
+          <div>  <button type="button" class="login" (click)="onlogOut()" *ngIf="isLogged"><span>Cerrar sesión</span></button></div>
+      </div> 
+   </div>
+
+   <nav class="caja2">
+      <div class="rowa">
+         <div class="foto"><img [src]="miPortfolio.imgFoto" alt="foto"></div>
+         <div class="nombre">
+            <!-- prueba de base de datos NetBeans, Postman, Msql -->
+            <h3>{{persona.nombre}} {{persona.apellido}}</h3>
+            <!-- prueba base de datos json -->
+            <h4> {{miPortfolio.position}}</h4>
+         </div>
+      </div>
+   </nav>
+   
 
 </header>
-  

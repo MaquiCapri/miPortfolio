@@ -11,7 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { VistaComponent } from './componentes/vista/vista.component';
-import { InputLoginComponent } from './componentes/input-login/input-login.component';
+
 import { InputMailComponent } from './componentes/input-mail/input-mail.component';
 import { InputGithubComponent } from './componentes/input-github/input-github.component';
 import { InputlinkedinComponent } from './componentes/inputlinkedin/inputlinkedin.component';
@@ -33,7 +33,7 @@ import { EditExperienciaComponent } from './experiencia/edit-experiencia/edit-ex
     FooterComponent,
     CurriculumComponent,
     VistaComponent,
-    InputLoginComponent,
+    
     InputMailComponent,
     InputGithubComponent,
     InputlinkedinComponent,

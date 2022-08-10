@@ -1,143 +1,153 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+.body {
     font-family: 'Nunito', sans-serif;
     /* background: rgb(254, 249, 231); */
-     background: rgb(169, 204, 227); 
-     text-align: center; 
+    background: rgb(169, 204, 227);
+    text-align: center;
     width: 100%;
-    border: 1px solid black;    
+    border: 1px solid black;
 
 }
 
-.grid-container-c{
+.grid-container-c {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.grid1-c{
+.grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-   border-radius: 20px;
-   margin: 25px;
-   color: azure; 
-   background: rgb(31,97,141);
-/* color: rgb(23, 32, 42); */
-box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
+    border-radius: 20px;
+    margin: 25px;
+    color: azure;
+    background: rgb(31, 97, 141);
+    box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 }
-.foto img{ 
+
+.foto img {
     width: 170px;
     height: 160px;
     margin-top: 30px;
     margin-left: 5px;
-    border-radius: 400px ;
+    border-radius: 400px;
 
-} 
+}
 
-.caja1-c{
-   padding: 20px;
-   }
+.perfil {
+    padding: 20px;
+    margin-top: -180px;
+}
 
-.grid2-c{
-    
+.sobreMi{
+    margin-top: -280px;
+  }
+
+.grid2-c {
+
     display: grid;
-    grid-template-rows: 130px 1fr 1fr ;
+    grid-template-rows: 130px 1fr 1fr;
     gap: 20px;
 }
-.caja3-c
- h1{
-   font-size: 40px;
+
+.presentacion h1 {
+    font-size: 40px;
     padding-top: 50px;
- 
 }
 
-
-.cajas4-5-c{
+.cajas4-5-c {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
 
-.caja4-c{
-   width: 190px;
-   height: 190px;
-   padding: 20px;
-   border-radius: 20px;
-   margin-top: 120px;
-   margin-left: 20px;
-   color: azure; 
-   background: rgb(84, 153, 199);
-/* color: rgb(23, 32, 42); */
-box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
-   
-
+.caja4-c {
+    width: 190px;
+    height: 190px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 120px;
+    margin-left: 20px;
+    color: azure;
+    background: rgb(84, 153, 199);
+    box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 }
-.caja5-c{
-  
+
+.caja5-c {
     width: 220px;
     height: 320px;
     padding: 25px;
     margin-top: 70px;
     border-radius: 20px;
-/* color: rgb(23, 32, 42); */
-   
-     color: azure; 
+     color: azure;
     background: rgb(84, 153, 199);
-    box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
-   
-    
+    box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+
+
 
 }
 
-.caja6-c{
-    
+.caja6-c {
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
-     color: azure; 
-    margin-bottom: 20px;
-   background: rgb(84, 153, 199);
-  
-   box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
+    color: azure;
+    background: rgb(84, 153, 199);
+    margin-top: -130px;
+    box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 
 }
 
-.boton{
+.boton {
     border-radius: 5px;
     cursor: pointer;
-  /* background:rgb(183, 149, 11); */
-  background: rgb(31,97,141);
+    background: rgb(31, 97, 141);
+    width: 70px;
+    margin-bottom: 10px;
+    border: 3px solid rgb(125, 102, 8);
+    color: rgb(23, 32, 42);
+    box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+}
 
-   /* color: azure; */
-  width: 70px;
- margin-bottom: 10px;
- border:3px solid rgb(125,102,8);
- color: rgb(23, 32, 42);
- box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
- }
-
-  .botonVolver{ 
-      margin-left: 680px; 
-  
-
-  } 
-
- @media (max-width: 583px){
-     .grid-container-c{
-  display: block;
-     }   
-     
-     /* .caja3-c{ */
+.botonVolver {
+    margin-left: 680px;
+    padding-bottom: 15px;
+    padding-top: 10px;
     
-     /* } */
+}
 
-    .body{
-      width: 530px;
+@media (max-width: 583px) {
+    
+    .grid-container-c {
+        display: block;
     }
- }
 
+    .body {
+         width: 700px;
+    }
 
+    .grid{
+        margin-top: 200px;
+    }
+
+    .caja6-c{
+        margin-top: 0px;
+    }
+
+    .botonVolver{
+        margin-left: 50px;
+    }
+
+.perfil{
+    margin-top: 15px;
+}
+
+.sobreMi{
+    margin-top: 0px;
+}
+    
+}

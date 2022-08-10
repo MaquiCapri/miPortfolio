@@ -1,0 +1,11 @@
+.container{
+    background: rgba(110, 175, 164,1);
+   
+    width: 70%;
+}
+
+.button{
+    margin-top: 15px;
+   margin-bottom: 15px;
+   margin-left: 180px;
+}
