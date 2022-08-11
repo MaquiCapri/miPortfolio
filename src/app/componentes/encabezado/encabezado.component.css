@@ -115,7 +115,17 @@
   font-family: 'Nunito', sans-serif;
 }
 
+@media (max-width: 750px) {
+  .caja2{
+    width: 950px;
+    margin-left: -220px;
+}
 
+.row{
+  margin-left: -220px;
+
+}
+}
 
 @media (max-width: 583px) {
   .caja2 {

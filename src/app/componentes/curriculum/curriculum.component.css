@@ -5,12 +5,10 @@
 
 .body {
     font-family: 'Nunito', sans-serif;
-    /* background: rgb(254, 249, 231); */
-    background: rgb(169, 204, 227);
     text-align: center;
     width: 100%;
     border: 1px solid black;
-
+    background: rgb( 232, 248, 245);
 }
 
 .grid-container-c {
@@ -24,7 +22,8 @@
     border-radius: 20px;
     margin: 25px;
     color: azure;
-    background: rgb(31, 97, 141);
+    /* background: rgb(31, 97, 141); */
+    background: #117A65;
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 }
 
@@ -58,6 +57,10 @@
     padding-top: 50px;
 }
 
+.presentacion{
+    color:rgb( 11, 83, 69); 
+}
+
 .cajas4-5-c {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -72,32 +75,34 @@
     margin-top: 120px;
     margin-left: 20px;
     color: azure;
-    background: rgb(84, 153, 199);
+    /* background: rgb(84, 153, 199); */
+    background: rgb(69, 179, 157);
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 }
 
-.caja5-c {
+.conocimiento {
     width: 220px;
     height: 320px;
     padding: 25px;
-    margin-top: 70px;
+    margin-top: 50px;
     border-radius: 20px;
      color: azure;
-    background: rgb(84, 153, 199);
+    /* background: rgb(84, 153, 199); */
+    background: rgb(69, 179, 157);
+
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-
-
-
 }
 
-.caja6-c {
+.educacion {
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
     color: azure;
-    background: rgb(84, 153, 199);
-    margin-top: -130px;
+    /* background: rgb(84, 153, 199); */
+    background: rgb(69, 179, 157);
+
+    margin-top: -150px;
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 
 }
@@ -120,26 +125,43 @@
     
 }
 
+@media (max-width: 750px) {
+    grid-container-c {
+        display: block;
+    }
+
+   .body{
+    width: 750px;
+  }
+
+  
+  .educacion{
+    margin-top: -120px;
+}
+
+.botonVolver{
+    margin-left: 10px;
+}
+
+}
+
 @media (max-width: 583px) {
     
     .grid-container-c {
         display: block;
     }
 
-    .body {
-         width: 700px;
-    }
-
+   
     .grid{
         margin-top: 200px;
     }
 
-    .caja6-c{
-        margin-top: 0px;
+    .educacion{
+        margin-top: -120px;
     }
 
     .botonVolver{
-        margin-left: 50px;
+        margin-left: 10px;
     }
 
 .perfil{
@@ -151,3 +173,4 @@
 }
     
 }
+

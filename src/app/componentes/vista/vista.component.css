@@ -6,10 +6,20 @@
     
 }
 
+@media (max-width: 750px) {
+   .body{
+      width: 1200px;
+   }
+}
+
+
+  
+
  @media (max-width: 583px){  
     .body{ 
-    width: 800px ; 
+    width: 900px ; 
      
  } 
- } 
+}
+ 
 
