@@ -1,26 +1,39 @@
 <header class="container">
 
    <div class="row">
-      <div class="col-xs-6 col-sm-6 col-lg-6 "><img [src]="miPortfolio.image" 
-         alt="logo arg.programa"></div>
+      <div><img src="./assets/logoArgPro.png" alt="logo arg.programa"></div>
 
-      <div  class="col-xs-6 col-sm-6 col-lg-6">
-         <div > <button type="button" class="login" (click)="irLogin()" *ngIf="!isLogged" ><span>Ingresar</span></button></div>
-          <div>  <button type="button" class="login" (click)="onlogOut()" *ngIf="isLogged"><span>Cerrar sesión</span></button></div>
-      </div> 
+      <div class="contacto">
+         <h3></h3>
+         <div class="logos">
+            <!-- proximamente voy hacer el formulario para que me puedan mandar mensaje a mi email -->
+            <!-- <div class="logoMail" class="bi bi-envelope-fill" (click)="irMail()")><img  
+                alt="logo correo"></div>  -->
+            <div><a class="logoGit" class="bi bi-github" href='http://github.com/MaquiCapri'></a>
+            </div>
+            <a class="logoLinkedin" class="bi bi-linkedin"></a>
+         </div>
+
+
+
+         <button type="button" class="login" (click)="irLogin()" *ngIf="!isLogged"><span>Ingresar</span></button>
+
+         <div> <button type="button" class="login" (click)="onlogOut()" *ngIf="isLogged"><span>Cerrar
+                  sesión</span></button></div>
+      </div>
    </div>
 
    <nav class="caja2">
       <div class="rowa">
-         <div class="foto"><img [src]="miPortfolio.imgFoto" alt="foto"></div>
+         <div class="foto"><img src="./assets/miaPaint.png" alt="foto"></div>
          <div class="nombre">
             <!-- prueba de base de datos NetBeans, Postman, Msql -->
             <h3>{{persona.nombre}} {{persona.apellido}}</h3>
-            <!-- prueba base de datos json -->
-            <h4> {{miPortfolio.position}}</h4>
+
+            <h4> Full Stack Developer Jr.</h4>
          </div>
       </div>
    </nav>
-   
+
 
 </header>

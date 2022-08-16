@@ -14,36 +14,38 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
 export class EncabezadoComponent implements OnInit {
 
   isLogged = false;
- 
-  persona: persona = new persona("","","");
- 
-   miPortfolio:any;
-   
-  
-  constructor(private datosPorfolio: PorfolioService, private router:Router, public personaService: PersonaService, private tokenService: TokenService ) { }
- 
-  
 
-   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data=>{this.persona = data})
-    
-    this.datosPorfolio.obtenerDatos().subscribe(data=>{
-       console.log(data);
-       this.miPortfolio=data;
-      });
+  persona: persona = new persona("", "", "");
 
-     if(this.tokenService.getToken()){
-        this.isLogged= true;
-      }else{
-        this.isLogged = false;
-      }
+  miPortfolio: any;
+
+
+  constructor(private datosPorfolio: PorfolioService, private router: Router, public personaService: PersonaService, private tokenService: TokenService) { }
+
+  irMail() {
+    this.router.navigate(['mail']);
+  }
+
+  ngOnInit(): void {
+    this.personaService.getPersona().subscribe(data => { this.persona = data })
+
+    this.datosPorfolio.obtenerDatos().subscribe(data => {
+      console.log(data);
+      this.miPortfolio = data;
+    });
+
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
     }
+  }
 
-  irLogin(){
+  irLogin() {
     this.router.navigate(['login']);
   }
 
-   onlogOut():void{
+  onlogOut(): void {
     this.tokenService.logOut();
     window.location.reload();
   }

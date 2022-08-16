@@ -10,11 +10,8 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  //  cliente: any;
 
-  //  clientesService: any;
-
-  isLogged= false;
+  isLogged = false;
   isLogginFail = false;
   loginUsuario!: LoginUsuario;
   nombreUsuario!: string;
@@ -23,13 +20,10 @@ export class LoginComponent implements OnInit {
   roles: string[] = [];
   errMsj!: string;
 
+  constructor(private router: Router, private tokenService: TokenService, private authService: AuthService) { }
 
-  constructor( private router:Router, private tokenService: TokenService, private authService: AuthService) { }
-  // volverLogin(){
-    // this.router.navigate(['']);
-  // }
   ngOnInit(): void {
-    if(this.tokenService.getToken()){
+    if (this.tokenService.getToken()) {
       //si esta logeado trae un token
       this.isLogged = true;
       //si estas logaedo no fallo sigue false
@@ -39,27 +33,23 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  onLogin():void{
+  onLogin(): void {
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
-    this.authService.login(this.loginUsuario).subscribe(data =>{
+    this.authService.login(this.loginUsuario).subscribe(data => {
       this.isLogged = true;
-      this.isLogginFail =false;
+      this.isLogginFail = false;
       this.tokenService.setToken(data.token);
       this.tokenService.setUserName(data.nombreUsuario);
       this.tokenService.setAuthorities(data.authorities);
       this.roles = data.authorities;
       this.router.navigate([''])
-    }, err =>{
+    }, err => {
       this.isLogged = false;
       this.isLogginFail = true;
       this.errMsj = err.error.mensaje;
       console.log(this.errMsj);
-      
+
     })
   }
 
-  // nuevoCliente(): void {
-    //  this.clientesService.agregarCliente(this.cliente);
-    //  this.cliente = this.clientesService.nuevoCliente();
-    //  }
 }

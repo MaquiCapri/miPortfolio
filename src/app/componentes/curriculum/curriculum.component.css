@@ -8,7 +8,7 @@
     text-align: center;
     width: 100%;
     border: 1px solid black;
-    background: rgb( 232, 248, 245);
+    background: rgb(232, 248, 245);
 }
 
 .grid-container-c {
@@ -22,7 +22,6 @@
     border-radius: 20px;
     margin: 25px;
     color: azure;
-    /* background: rgb(31, 97, 141); */
     background: #117A65;
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 }
@@ -38,12 +37,12 @@
 
 .perfil {
     padding: 20px;
-    margin-top: -180px;
+    margin-top: -100px;
 }
 
-.sobreMi{
-    margin-top: -280px;
-  }
+.sobreMi {
+    margin-top: -120px;
+}
 
 .grid2-c {
 
@@ -57,8 +56,8 @@
     padding-top: 50px;
 }
 
-.presentacion{
-    color:rgb( 11, 83, 69); 
+.presentacion {
+    color: rgb(11, 83, 69);
 }
 
 .cajas4-5-c {
@@ -75,7 +74,6 @@
     margin-top: 120px;
     margin-left: 20px;
     color: azure;
-    /* background: rgb(84, 153, 199); */
     background: rgb(69, 179, 157);
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 }
@@ -86,10 +84,8 @@
     padding: 25px;
     margin-top: 50px;
     border-radius: 20px;
-     color: azure;
-    /* background: rgb(84, 153, 199); */
+    color: azure;
     background: rgb(69, 179, 157);
-
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 }
 
@@ -99,30 +95,16 @@
     margin-right: 20px;
     border-radius: 20px;
     color: azure;
-    /* background: rgb(84, 153, 199); */
     background: rgb(69, 179, 157);
-
-    margin-top: -150px;
+    margin-top: -10px;
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-
-}
-
-.boton {
-    border-radius: 5px;
-    cursor: pointer;
-    background: rgb(31, 97, 141);
-    width: 70px;
-    margin-bottom: 10px;
-    border: 3px solid rgb(125, 102, 8);
-    color: rgb(23, 32, 42);
-    box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+    height: 500px;
 }
 
 .botonVolver {
     margin-left: 680px;
     padding-bottom: 15px;
     padding-top: 10px;
-    
 }
 
 @media (max-width: 750px) {
@@ -130,47 +112,46 @@
         display: block;
     }
 
-   .body{
-    width: 750px;
-  }
+    .body {
+        width: 750px;
+    }
 
-  
-  .educacion{
-    margin-top: -120px;
-}
 
-.botonVolver{
-    margin-left: 10px;
-}
+    .educacion {
+        margin-top: -120px;
+    }
+
+    .botonVolver {
+        margin-left: 10px;
+    }
 
 }
 
 @media (max-width: 583px) {
-    
+
     .grid-container-c {
         display: block;
     }
 
-   
-    .grid{
+
+    .grid {
         margin-top: 200px;
     }
 
-    .educacion{
+    .educacion {
         margin-top: -120px;
     }
 
-    .botonVolver{
+    .botonVolver {
         margin-left: 10px;
     }
 
-.perfil{
-    margin-top: 15px;
-}
+    .perfil {
+        margin-top: 15px;
+    }
 
-.sobreMi{
-    margin-top: 0px;
-}
-    
-}
+    .sobreMi {
+        margin-top: 0px;
+    }
 
+}

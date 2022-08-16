@@ -1,69 +1,29 @@
-
-.caja4{
-    background: rgba(110, 175, 164,1);
+.caja4 {
+    background: rgba(110, 175, 164, 1);
     height: 190px;
-    display:flex;
-}
-
-.contacto {
-    width: 80%;
-    height: 70%;
-    border:4px solid rgb(23,32,42);
-    text-align: center;
-    padding-top: 10px;
-    color: #1b1a1a;
-    border-radius: 10px ;
-    margin:10px;
-    margin-left: 80px;
-    margin-top: 15px;
-    padding: 10px;
-    background: #fafafa;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    box-shadow: 0px 15px 25px rgb(0, 0, 0,0.50);
-    }
-
-
-    .contacto .logos{
-    display:grid;
-    grid-template-columns: 20% 20% 20%;
-    margin: auto;
-    margin-left: 180px;
-    margin-top: 20px;
-    padding-bottom: 50px;
-    text-align: center;
+    display: flex;
 }
 
 
- .contacto .logo:hover{
-    transform: scale(1.3);
-    z-index:2;
-}
-
-.contacto .logo img{
-    width: 60px;
-    height: 30px;
-    
-
-  }
-
-  .logoCopy img{
+.logoCopy img {
     width: 20px;
-    height: 20px; 
-   
-  }
+    height: 20px;
 
-  .logoCopy{
-      text-align: center;
-      color: #fefefe;
-  }
+}
 
-      p{ 
-       text-align: center; 
-      color: #fefefe;
-      } 
+.logoCopy {
+    /* text-align: center; */
+    color: #fefefe;
+   margin-left: 150px;
 
-  @media (max-width: 575px){
+}
+
+p {
+    text-align: center;
+    color: #fefefe;
+}
+
+/* @media (max-width: 575px){ 
        
         .contacto{
                  margin-top: 15px;
@@ -76,4 +36,4 @@
                margin-top: 15px;
               }
                
-  }
+   } */

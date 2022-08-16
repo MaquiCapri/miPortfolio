@@ -5,17 +5,13 @@ import { AppComponent } from './app.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { ContainerComponent } from './componentes/container/container.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { CurriculumComponent } from './componentes/curriculum/curriculum.component'
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { VistaComponent } from './componentes/vista/vista.component';
-
 import { InputMailComponent } from './componentes/input-mail/input-mail.component';
-import { InputGithubComponent } from './componentes/input-github/input-github.component';
-import { InputlinkedinComponent } from './componentes/inputlinkedin/inputlinkedin.component';
-
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { CircleProgressComponent } from './componentes/circle-progress/circle-progress.component';
 import { LoginComponent } from './componentes/login/login.component';
@@ -33,10 +29,8 @@ import { EditExperienciaComponent } from './experiencia/edit-experiencia/edit-ex
     FooterComponent,
     CurriculumComponent,
     VistaComponent,
-    
     InputMailComponent,
-    InputGithubComponent,
-    InputlinkedinComponent,
+   
     CircleProgressComponent,
     LoginComponent,
     ExperienciaComponent,
