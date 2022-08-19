@@ -1,13 +1,8 @@
+.gradient-custom {
+   background-image: url("/assets/fondodelogin.jpg");
 
+}
 
-
-  /* .gradient-custom { 
-
-    background: #117A65;  
-   background: rgba(110, 175, 164,1);
-    
-  } 
-
-  .container{
-  margin-bottom: 150px;
-  } */
+.container {
+   margin-bottom: 150px;
+}
