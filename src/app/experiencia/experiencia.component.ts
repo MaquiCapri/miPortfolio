@@ -22,6 +22,7 @@ export class ExperienciaComponent implements OnInit {
     } else {
       this.isLogged = false;
     }
+    //si estamos logeados o no
   }
 
   cargarExperiencia(): void {

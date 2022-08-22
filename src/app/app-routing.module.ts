@@ -7,6 +7,7 @@ import { InputMailComponent } from './componentes/input-mail/input-mail.componen
 import { LoginComponent } from './componentes/login/login.component';
 import { NewExperienciaComponent } from './experiencia/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './experiencia/edit-experiencia/edit-experiencia.component';
+import { EditskillsComponent } from './skills/editskills.component';
 
 const Routes: Routes = [
   { path: '', component: VistaComponent },
@@ -15,6 +16,7 @@ const Routes: Routes = [
   { path: 'mail', component: InputMailComponent },
   { path: 'nuevaexp', component: NewExperienciaComponent },
   { path: 'editexp/:id', component: EditExperienciaComponent },
+  {path: 'editskills', component: EditskillsComponent}
 ]
 
 @NgModule({

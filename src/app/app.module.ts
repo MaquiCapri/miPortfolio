@@ -18,6 +18,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { NewExperienciaComponent } from './experiencia/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './experiencia/edit-experiencia/edit-experiencia.component';
+import { SkillsComponent } from './skills/skills.component';
+import { EditskillsComponent } from './skills/editskills.component';
 
 
 
@@ -35,7 +37,9 @@ import { EditExperienciaComponent } from './experiencia/edit-experiencia/edit-ex
     LoginComponent,
     ExperienciaComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    SkillsComponent,
+    EditskillsComponent
   ],
   imports: [
     BrowserModule,
