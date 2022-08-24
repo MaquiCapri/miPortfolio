@@ -20,8 +20,8 @@ import { NewExperienciaComponent } from './experiencia/new-experiencia/new-exper
 import { EditExperienciaComponent } from './experiencia/edit-experiencia/edit-experiencia.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EditskillsComponent } from './skills/editskills.component';
-import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
-import { EditsobreMiComponent } from './sobre-mi/editsobre-mi/editsobre-mi.component';
+
+
 
 
 
@@ -42,8 +42,7 @@ import { EditsobreMiComponent } from './sobre-mi/editsobre-mi/editsobre-mi.compo
     EditExperienciaComponent,
     SkillsComponent,
     EditskillsComponent,
-    SobreMiComponent,
-    EditsobreMiComponent
+   
   ],
   imports: [
     BrowserModule,

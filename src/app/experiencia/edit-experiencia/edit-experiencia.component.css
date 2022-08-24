@@ -1,3 +1,6 @@
+.container{
+   background-image: url("/assets/fondodelogin.jpg");
+}
 .button{
     margin-top: 15px;
    margin-bottom: 15px;
