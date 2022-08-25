@@ -17,7 +17,8 @@
 
  @media (max-width: 583px){  
     .body{ 
-    width: 900px ; 
+    width: 350px ; 
+    margin-left: -16px;
      
  } 
 }

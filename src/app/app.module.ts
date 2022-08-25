@@ -18,8 +18,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { NewExperienciaComponent } from './experiencia/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './experiencia/edit-experiencia/edit-experiencia.component';
-import { SkillsComponent } from './skills/skills.component';
-import { EditskillsComponent } from './skills/editskills.component';
+
 
 
 
@@ -34,15 +33,12 @@ import { EditskillsComponent } from './skills/editskills.component';
     CurriculumComponent,
     VistaComponent,
     InputMailComponent,
-   
     CircleProgressComponent,
     LoginComponent,
     ExperienciaComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
-    SkillsComponent,
-    EditskillsComponent,
-   
+
   ],
   imports: [
     BrowserModule,

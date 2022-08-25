@@ -1,11 +1,10 @@
-.container{
-    background: rgba(110, 175, 164,1);
-   
+.container {
+    background-image: url("/assets/fondodelogin.jpg");
     width: 70%;
 }
 
-.button{
+.button {
     margin-top: 15px;
-   margin-bottom: 15px;
-   margin-left: 180px;
+    margin-bottom: 15px;
+    margin-left: 180px;
 }

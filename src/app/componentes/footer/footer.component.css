@@ -26,17 +26,14 @@ p {
     color: #fefefe;
 }
 
-/* @media (max-width: 575px){ 
+ @media (max-width: 575px){ 
        
-        .contacto{
-                 margin-top: 15px;
-                 margin-left: 45px;
-                
-              }
-              .contacto .logos{
-               display: inline-flex;
-               margin-left: 30px;
-               margin-top: 15px;
-              }
+    .caja4{
+       margin-left: -140px;
+       margin-bottom: 40px;
+       
+    display: flex;
+
+    }    
                
-   } */
+   } 
