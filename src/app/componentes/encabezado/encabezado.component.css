@@ -106,7 +106,7 @@
 }
 
 .caja2 .nombre {
-  height: 58%;
+   height: 58%; 
   width: 70%;
   box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.9);
   border-radius: 10px;
@@ -115,6 +115,7 @@
   text-align: center;
   margin-top: 30px;
   margin-left: 50px;
+   margin-left: 50px; 
   box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
 
 }
@@ -131,42 +132,52 @@
   font-family: 'Nunito', sans-serif;
 }
 
-@media (max-width: 750px) {
+/* sé que hay otra manera para que el responsive quede mejor pero 
+tendría que cambiar la estructura, trabajar más con bootstrap . 
+mi inteción  es hacerlo mas adelante ya que quiero profundizar en lo que es
+front end  */
+
+@media (max-width: 800px) {
   .caja2 {
     width: 950px;
     margin-left: -220px;
   }
 
   .row {
-    margin-left: -220px;
+     margin-left: -220px; 
+    width: 900px;
   }
 }
 
 @media (max-width: 583px) {
-  .caja2 {
-    margin-right: 20px;
-    margin-top: 15px;
-    display: inline-flex;
-  }
 
-  .caja2 {
-    margin: -5px;
-    width: 650px;
+  .row{
+    width: 550px;
+    margin-left: -220px; 
+
+
+  }
+  
+   .caja2 {
+   width: 350px;
+  margin-left: -35px;
+
   }
 
   .caja2 .foto img {
     margin-left: -25px;
     margin-bottom: 20px;
-    width: 150px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
   }
 
   .caja2 .nombre {
     padding-bottom: 20px;
     text-align: center;
-    height: 60%;
-    width: 90%;
-    margin-left: 10px;
+     height: 60%; 
+     width: 90%; 
+     margin-left: 10px; 
+   
 
   }
 
@@ -178,9 +189,30 @@
     font-size: 18px;
   }
 
+
   .row .login {
-    margin-left: 650px;
+    margin-left: 320px;
 
   }
 
+  .contacto .logos{
+  margin-left: 140px;
+
+  }
+
+  .row img {
+    margin-left: 180px;
+    
+   }
+
+   .logoGit{
+    margin-left: -40px;
+   }
+
+   
+   .logoLinkedin{
+    margin-left: -170px;
+   }
+
+   
 }

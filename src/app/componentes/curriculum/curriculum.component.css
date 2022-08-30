@@ -90,7 +90,7 @@
 }
 
 .educacion {
-      padding: 20px;  
+    padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
@@ -98,7 +98,7 @@
     background: rgb(69, 179, 157);
     margin-top: -80px;
     box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-   
+
 }
 
 .botonVolver {
@@ -107,7 +107,7 @@
     padding-top: 10px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
     grid-container-c {
         display: block;
     }
@@ -122,36 +122,81 @@
     }
 
     .botonVolver {
-        margin-left: 10px;
+        margin-left: 30px;
     }
 
 }
 
 @media (max-width: 583px) {
+    .body {
+        width: 350px;
+    }
 
     .grid-container-c {
         display: block;
     }
 
-
     .grid {
-        margin-top: 200px;
+
+        width: 300px;
+        height: 720px;
     }
 
     .educacion {
         margin-top: -120px;
+        width: 335px;
+        margin-left: 10px;
+
     }
 
     .botonVolver {
         margin-left: 10px;
     }
 
+
     .perfil {
-        margin-top: 15px;
+        margin-bottom: 10px;
+        margin-top: 0px;
     }
 
     .sobreMi {
         margin-top: 0px;
+
     }
+
+    .cajas4-5-c {
+        height: 450px;
+    }
+
+    .presentacion h1 {
+        font-size: 30px;
+        margin-right: 20px;
+
+    }
+
+    .presentacion h3 {
+        margin-right: 40px;
+    }
+
+    .caja4-c {
+        width: 140px;
+
+    }
+
+    .caja4-c h3 {
+        font-size: 18px;
+
+    }
+
+    .conocimiento {
+        width: 160px;
+        height: 380px;
+
+    }
+
+    .conocimiento h3 {
+        font-size: 18px;
+    }
+
 
 }

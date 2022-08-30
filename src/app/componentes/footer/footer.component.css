@@ -1,39 +1,51 @@
 .caja4 {
-    background: rgba(110, 175, 164, 1);
-    height: 190px;
-    display: flex;
-    text-align: center; 
-    padding-top: 135px;
-    padding-left: 15px;
+  background: rgba(110, 175, 164, 1);
+  height: 190px;
+  display: flex;
+  text-align: center;
+  padding-top: 135px;
+  padding-left: 15px;
 }
 
-
 .logoCopy img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 
 }
 
 .logoCopy {
-   
-    color: #fefefe;
-   margin-left: 150px;
+
+  color: #fefefe;
+  margin-left: 150px;
 
 }
 
 p {
-    text-align: center;
-    color: #fefefe;
+  text-align: center;
+  color: #fefefe;
 }
 
- @media (max-width: 575px){ 
-       
-    .caja4{
-       margin-left: -140px;
-       margin-bottom: 40px;
-       
-    display: flex;
+@media (max-width: 800px) {
+  .caja4 {
+    padding-left: 160px;
+  }
 
-    }    
-               
+}
+
+@media (max-width: 575px) {
+
+  .caja4 {
+     margin-left: -250px; 
+    margin-bottom: 40px;
+    display: inline-block;
+  }
+
+   .logoCopy { 
+    padding-right: 20px;
+  }
+
+  p {
+    margin-left: 0px;
    } 
+
+}

@@ -130,6 +130,14 @@ article {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+}
+
 @media (max-width: 575px) {
 
   .grid-container {
@@ -151,6 +159,14 @@ article {
     height: 800px;
   }
 
+.caja2 h3 {
+height: 25px;
+}
+
+.caja2 .item{
+  margin-top: -50px;
+}
+
   .caja1 {
     margin-right: 20px;
     margin-top: 15px;
@@ -159,7 +175,9 @@ article {
 
   .carousel{
   width: 250px;
-
+margin-left: 5px;
   }
+
+
 
 }
