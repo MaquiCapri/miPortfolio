@@ -12,7 +12,7 @@
 
 @media (max-width: 583px) {
    .body {
-      width: 350px;
       margin-left: -16px;
+      width: 100%;
    }
 }

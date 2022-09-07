@@ -35,17 +35,18 @@ p {
 @media (max-width: 575px) {
 
   .caja4 {
-     margin-left: -250px; 
-    margin-bottom: 40px;
     display: inline-block;
+    padding: 0px;
   }
 
    .logoCopy { 
-    padding-right: 20px;
+    font-size: 10px;
+    margin-left: 80px;
+   
   }
 
   p {
-    margin-left: 0px;
+    font-size: 10px;
    } 
 
 }
