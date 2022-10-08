@@ -130,6 +130,10 @@ article {
   text-align: center;
 }
 
+#icon{
+  color: rgb(99, 97, 97);
+}
+
 @media (max-width: 800px) {
   .grid-container {
     display: grid;

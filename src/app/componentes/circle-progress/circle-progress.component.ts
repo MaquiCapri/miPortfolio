@@ -11,5 +11,4 @@ export class CircleProgressComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
