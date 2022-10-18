@@ -1,35 +1,51 @@
-<article class="grid-container">
-    <section class="cajas1-2">
-        <div class="caja1">
+<section class="grid-container">
+    <article class="boxs">
+        <div class="aboutMe">
             <h3>Acerca de mi:</h3>
             <h5> Desde que descubrí la programación sé que es donde quiero profundizar y
                 quedarme para seguir creciendo.</h5>
 
-            <button type="button" class="boton" (click)="irCurriculum()"><span>Curriculum</span></button>
+             <button type="button" class="boton" (click)="irCurriculum()" ><span>Curriculum</span></button> 
+             
         </div>
-        <div class="caja2">
-            <h3>Proyectos y prácticas:</h3>
-             <div class="item"><h3>Certificados:</h3></div> 
-           
-                <div class="card" style="width: 16rem;" >
-                    <img src="/assets/fotoport.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Portfolio</h5>
-                        <p class="card-text">Es un proyecto que realicé en Argentina Programa. 
-                            En la segunda etapa como manera de aprender los diferentes lenguajes que nos iban enseñando.
-                             Tanto del Front end como del Back end y la base de datos. Todo en un mismo proyecto.
-                            </p>
-                            <!-- lo voy a dirigir a una pagina explicando todo el proceso y las tecnologías utilizadas -->
-                        <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
-                    </div>
+        <div class="proyects">
+            <h3>Proyectos</h3>
+            <div class="card mb-3" style="max-width: 540px;" style="text-align: center;">
+                <div class="row g-0">
+                  <div class="col-md-4" id="fotoPort">
+                    <img src="/assets/fotoport.png"  class="img-fluid rounded-start" alt="fotoPort">
+                  </div>
+                  <div class="col-md-8" >
+                    <div class="card-body" >
+                        <h5>Portfolio en Argentina Programa</h5>
+                       <button type="button" class="button" ><span>Leer más</span></button> 
+                   </div>
+                  </div>
                 </div>
-            
+            </div>
 
+            <div class="card mb-3" style="max-width: 540px;" style="text-align: center;">
+                <div class="row g-0">
+                  <div class="col-md-4" id="fotoPort">
+                    <img src="/assets/deliveryPort.png"  class="img-fluid rounded-start" alt="fotoPort">
+                  </div>
+                  <div class="col-md-8" >
+                    <div class="card-body" >
+                        <h5>App de Delivery de comida</h5>
+                       <button type="button" class="button" ><span>Leer más</span></button> 
+                   </div>
+                  </div>
+                </div>
+            </div> 
+      </div>
+      <div class="certificate">
+               <h3>Certificados:</h3>
             <div class="carousel">
-                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+
+                <div id="carouselExampleControlsNoTouching"  class="carousel slide" data-bs-touch="false"
                     data-bs-interval="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+                    <div class="carousel-inner" >
+                        <div class="carousel-item active" id="c">
                             <img src="./assets/certifica.png" class="d-block w-100" alt="...">
                         </div>
                         <!-- aca va el certificado de yo programo -->
@@ -41,8 +57,6 @@
                     <div class="button1"  >
                      <button class="carousel-control-prev" type="button"   
                          data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev" > 
-                         <!-- <span class="carousel-control-prev-icon"  aria-hidden="true" ></span>  -->
-                         <!-- <span  class= "visually-hidden" ></span>  -->
                          <svg  xmlns="http://www.w3.org/2000/svg" id="icon" width="28" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                           </svg>
@@ -58,15 +72,15 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> 
+    </article>
+    
 
-    </section>
-
-    <section class="caja3">
+    <aside class="circle">
         <h3>Tecnologías que manejo:</h3>
 
-        <app-circle-progress></app-circle-progress>
+         <app-circle-progress></app-circle-progress> 
         
-    </section>
+    </aside>
 
-</article>
+</section>

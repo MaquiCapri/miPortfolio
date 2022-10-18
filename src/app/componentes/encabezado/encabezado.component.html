@@ -1,40 +1,35 @@
-<header class="container">
+<div class="container-fluid ">
+  <div class="row" id="navbar">
+    <div class=" col-6 col-sm-5 col-md-6 col-lg-8 ">
+      <img src="./assets/logoArgPro.png" style="width:5rem ;" alt="logo arg.programa">
+    </div>
+    <div class="col-3 col-sm-4 col-md-3 col-lg-2" id="logos">
 
-   <div class="row">
-      <div><img src="./assets/logoArgPro.png" alt="logo arg.programa"></div>
+        <a class="logoGit" href='http://github.com/MaquiCapri'><img src="./assets/github-brands.png"
+            style="width:2rem ;" id="git" alt="logoGit"></a>
+        <a class="logoLinkedin" href='https://www.linkedin.com/in/maqui-caprioglio-b0aa8086/'><img
+            src="./assets/linkedin-brands.png" style="width:2rem ;" id="link" alt="logoLinkedin"></a>
+      
+    </div>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-2 " id="login1">
 
-      <div class="contacto">
-         <h3></h3>
-         <div class="logos">
-            <!-- proximamente voy hacer el formulario para que me puedan mandar mensaje a mi email -->
-            <!-- <div class="logoMail" class="bi bi-envelope-fill" (click)="irMail()")><img  
-                alt="logo correo"></div>  -->
-            <div><a class="logoGit"  href='http://github.com/MaquiCapri'><img src="./assets/github-brands.png" alt="logoGit"></a>
-            </div>
-            <div><a class="logoLinkedin" href= 'https://www.linkedin.com/in/maqui-caprioglio-b0aa8086/' ><img src="./assets/linkedin-brands.png" alt="logoLinkedin"></a>
-            </div>
-         </div>
+      <button type="button" id="login" (click)="irLogin()" *ngIf="!isLogged"><span>Ingresar</span></button>
+      <button type="button" id="login" (click)="onlogOut()" *ngIf="isLogged"><span>Cerrar sesión</span></button>
+    </div>
+  </div>
+</div>
 
+<div class="container-fluid">
+  <div class="row" id="nav">
+    <div class="col-4 " id="img">
+      <div class="foto"><img src="./assets/miaPaint.png" class="img-fluid" alt="foto"></div>
 
-
-         <button type="button" class="login" (click)="irLogin()" *ngIf="!isLogged"><span>Ingresar</span></button>
-
-          <button type="button" class="login" (click)="onlogOut()" *ngIf="isLogged"><span>Cerrar
-                  sesión</span></button>
-      </div>
-   </div>
-
-   <nav class="caja2">
-      <div class="rowa">
-          <div class="foto"><img src="./assets/miaPaint.png" alt="foto"></div> 
-         <div class="nombre">
-            <!-- prueba de base de datos NetBeans, Postman, Msql -->
-            <h3>{{persona.nombre}} {{persona.apellido}}</h3>
-
-            <h4> Full Stack Developer Jr.</h4>
-         </div>
-      </div>
-   </nav>
-
-
-</header>
+    </div>
+    <div class="col-8" id="name">
+      <!-- prueba de base de datos NetBeans, Postman, Msql -->
+      <h3>{{persona.nombre}} {{persona.apellido}}</h3>
+      <h4> Full Stack Developer Jr.</h4>
+      <div><img src="./assets/mail.png" alt="logoMail" width="18rem">maquicapri@gmail.com</div>
+    </div>
+  </div>
+</div>

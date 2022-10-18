@@ -1,218 +1,101 @@
-.row {
+#navbar{
   background-color: rgb(161, 160, 160);
-  border: 1px solid rgb(23, 32, 42);
-  height: 65px;
-  margin-left: -32px;
-  width: auto;
-
 }
-
-.row img {
-  margin-left: 20px;
-  margin-top: 10px;
-  width: 100px;
-  height: 50px;
-
-}
-
-.row .login {
-  width: 100px;
-  height: 30px;
-  margin-left: 600px;
-  margin-top: -40px;
-  background: rgb(23, 32, 42);
-  color: #fcfcfc;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 1s ease all;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-
-}
-
-.row .login span {
-  position: relative;
-  z-index: 2;
-
-}
-
-.row .login::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgb(31, 97, 141);
-  position: absolute;
-  z-index: 1;
-  top: -80px;
-  left: 0;
-  transition: 1s ease all;
-
-}
-
-.row .login:hover::after {
-  top: 0;
-}
-
-.contacto .logos {
-  margin: auto;
-  margin-left: 550px;
-  margin-top: -50px;
-  padding-bottom: 50px;
-  text-align: center;
-  width: 80%;
-  height: 70%;
+#logos{
   display: inline-flex;
   cursor: pointer;
+  margin-top: 8px;  
+ }
 
-}
-
-
-.contacto .logos img {
-  width: 30px;
-  height: 25px;
-}
-
-.contacto {
-  display: grid;
-  grid-template-columns: 10% 10% 10%;
-
-}
-
-.caja2 .rowa {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  width: 95%;
-  height: 220px;
-  border: 3px solid rgb(23, 32, 42);
-  background-image: url("/assets/fondoAzu.png");
-  padding: 20px;
-  border-radius: 400px;
-  margin: 15px;
-}
-
-.caja2 .foto img {
-  width: 170px;
-  height: 160px;
-  margin-top: 20px;
-  margin-left: 70px;
-  border-radius: 400px;
-  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-
-}
-
-.caja2 .nombre {
-  height: 58%;
-  width: 70%;
-  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  background: #fcfcfc;
-  border: 4px solid rgb(23, 32, 42);
-  text-align: center;
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-left: 50px;
-  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-
-}
-
-.caja2 .nombre h3 {
-  font-size: 30px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 900;
-  padding-top: 20px;
-
-}
-
-.caja2 .nombre h4 {
-  font-family: 'Nunito', sans-serif;
-}
-
-/* sé que hay otra manera para que el responsive quede mejor pero 
-tendría que cambiar la estructura, trabajar más con bootstrap . 
-mi inteción  es hacerlo mas adelante ya que quiero profundizar en lo que es
-front end  */
-
-@media (max-width: 800px) {
-  .caja2 {
-    width: 950px;
-    margin-left: -220px;
+#git{
+  margin-left: 15px; 
+ /* text-align: end; */
+  }
+  #link{
+    margin-left: 15px;
   }
 
-  .row {
-    margin-left: -220px;
-    width: 900px;
-  }
-}
+ #login { 
+      /* width: 100px; */
+      /* height: 30px; */
+       margin-top: 8px;  
+      background: rgb(23, 32, 42);
+      color: #fcfcfc;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 1s ease all;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+    }
+     #login1{ 
+       text-align: left; 
+     } 
+    
+     #login span { 
+      position: relative;
+      z-index: 2;
+    
+    }
+    
+    #login::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgb(31, 97, 141);
+      position: absolute;
+      z-index: 1;
+      top: -80px;
+      left: 0;
+      transition: 1s ease all;
+    
+    }
+    
+   #login:hover::after {
+      top: 0;
+     } 
 
-@media (max-width: 583px) {
-
-  .row {
-    width: 100%;
-    margin: 0px;
-
-  }
-
-  .caja2 {
-    width: 350px;
-    margin-left: -35px;
-
-  }
-
-  .caja2 .foto img {
-    margin-left: -25px;
-    margin-bottom: 20px;
-    width: 120px;
-    height: 120px;
-  }
-
-  .caja2 .nombre {
-    padding-bottom: 20px;
-    text-align: center;
-    height: 60%;
-    width: 90%;
-    margin-left: 10px;
-  }
-
-  .caja2 .nombre h4 {
-    font-size: 13px;
-  }
-
-  .caja2 .nombre h3 {
-    font-size: 18px;
-  }
-
-
-  .row .login {
-    margin-left: 140px;
-
-  }
-
-  .contacto .logos {
-    margin-left: 90px;
-    margin-top: -35px;
-
-
-  }
-
-  .row img {
-    /* margin-left: 10px; */
-    margin: 0px;
-
-  }
-
-  /* .logoGit{ */
-  /* margin-left: -40px; */
-  /* } */
-
-
-  .logoLinkedin {
-    margin-left: 5px;
-  }
-
-
-}
+     #nav{
+       background-image: url("/assets/fondoAzu.png"); 
+      height: 220px;
+       }
+     
+  
+      .foto img {
+      width: 170px;
+      height: 160px;
+      margin-top: 20px;
+      border-radius: 400px;
+      box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+    }
+    #img{
+      text-align: center;
+    }
+    
+    #name {
+       height: 80%; 
+       width: 50%; 
+      box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      background: #fcfcfc;
+      border: 4px solid rgb(23, 32, 42);
+      text-align: center;
+      box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+    margin: 20px;
+    }
+    
+      h3 {
+      font-size: 30px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      padding-top: 20px;
+     }
+    
+     h4 {
+      font-family: 'Nunito', sans-serif;
+      
+    }
