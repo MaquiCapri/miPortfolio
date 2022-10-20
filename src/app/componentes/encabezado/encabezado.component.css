@@ -1,5 +1,5 @@
 #navbar{
-  background-color: rgb(161, 160, 160);
+  background-color: #a1a0a0;
 }
 #logos{
   display: inline-flex;
@@ -9,15 +9,12 @@
 
 #git{
   margin-left: 15px; 
- /* text-align: end; */
   }
   #link{
     margin-left: 15px;
   }
 
  #login { 
-      /* width: 100px; */
-      /* height: 30px; */
        margin-top: 8px;  
       background: rgb(23, 32, 42);
       color: #fcfcfc;
@@ -58,6 +55,32 @@
    #login:hover::after {
       top: 0;
      } 
+     #color{
+      background: #1F4761; 
+      border-radius: 110px;
+      border: none;
+      color: beige;
+      height: 40px;
+      margin: 5px;
+     }
+     #color1{
+      background: #712167;
+      border-radius: 110px;
+      border: none;
+      color: beige;
+      height: 40px;
+      margin: 5px;
+
+     }
+
+     #color2{
+      background: #6eafa4;
+      border-radius: 110px;
+      border: none;
+      color: beige;
+      margin: 5px;
+      height: 40px;
+     }
 
      #nav{
        background-image: url("/assets/fondoAzu.png"); 

@@ -11,6 +11,32 @@
   <link rel='stylesheet' href='main.css/estilos.css'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      document.getElementById("color").addEventListener("click",colorFondo, false);
+      document.getElementById("color1").addEventListener("click",colorFondo1, false);
+      document.getElementById("color2").addEventListener("click",colorFondo2, false);
+
+    });
+     function colorFondo(){
+        var colorfondo= $(".body").css("background-color");
+        var colorfondo= $(".body").css("background-color","#1F4761" );
+           }
+           function colorFondo1(){
+        var colorfondo= $(".body").css("background-color");
+        var colorfondo= $(".body").css("background-color","#712167" );
+        var colorfondo= $("#navbar").css("background-color","#712167" );
+        var colorfondo= $("#nav").css("background-image", "url('/assets/fondoFuccia.jpg')" );
+              }
+              function colorFondo2(){
+        var colorfondo= $(".body").css("background-color");
+        var colorfondo= $(".body").css("background-color","#6eafa4" );
+        var colorfondo= $("#navbar").css("background-color","#a1a0a0" );
+        var colorfondo= $("#nav").css("background-image", "url('/assets/fondoAzu.png')" );
+              }
+  </script>
+<!-- "#BDC3C7" -->
 </head>
 <body >
   <app-root></app-root>

@@ -13,7 +13,7 @@ export class CurriculumComponent implements OnInit {
  
 
   constructor( private router:Router) { }
-  volverVista(){
+  volver(){
     this.router.navigate(['']);
   }
   ngOnInit(): void {

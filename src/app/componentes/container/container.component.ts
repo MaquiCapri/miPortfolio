@@ -17,6 +17,10 @@ export class ContainerComponent implements OnInit {
     this.router.navigate(['curriculum']);
   }
 
+  irProyects(){
+    this.router.navigate(['proyects']);
+  }
+
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data=>{

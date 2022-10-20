@@ -22,9 +22,9 @@ export class EncabezadoComponent implements OnInit {
 
   constructor(private datosPorfolio: PorfolioService, private router: Router, public personaService: PersonaService, private tokenService: TokenService) { }
 
-  irMail() {
-    this.router.navigate(['mail']);
-  }
+  // irMail() {
+    // this.router.navigate(['mail']);
+  // }
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => { this.persona = data })
@@ -48,6 +48,10 @@ export class EncabezadoComponent implements OnInit {
   onlogOut(): void {
     this.tokenService.logOut();
     window.location.reload();
+  }
+
+  irInicio() {
+    this.router.navigate(['']);
   }
 
 }

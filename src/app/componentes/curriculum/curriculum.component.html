@@ -1,68 +1,69 @@
-<body class="body">
-  <article class="grid-container-c">
-    <section class="grid">
-      <div class="caja0-c">
-        <div class="foto"><img src="./assets/miaPaint.png" alt="foto"></div>
-      </div>
-      <div class="perfil">
-        <h3>Perfil</h3>
-        <p>Formar parte de una empresa que me otorgue estabilidad laboral,
-          donde pueda aplicar mis conocimientos para el crecimiento laboral, personal e intelectual.</p>
-      </div>
-      <div class="sobreMi">
-        <h3> Sobre mí:</h3>
-        <p>Vivo en Capilla del Monte,Córdoba con mi pareja
-          y mis tres hijos. Tengo 43 años. Estoy muy dedicada a estudiar programación.
-          Actualmente mis hobbies son las caminatas y el padel. Siempre
-          me gustaron las artes y manualidades (diferentes danzas, tejer ,
-          dibujo...).
-          Me gusta trabajar en equipo y la creatividad es para mí
-          una gran herramienta.
-        </p><br>
-        <P>Contacto:</P>
-        <p> Email: maquicapri@gmail.com</p>
-      </div>
-    </section>
+<div class="container" >
+<div class="row">
+    <div class=" col-5" style="text-align: center;">
+        <div style="text-align:center;">
+           <img src="./assets/miaPaint.png" alt="foto" width="145rem" >
+       </div>
+        <br/>
+        <br/>
+          <div class="sobreMi">
+                <h3> Sobre mí:</h3>
+                <p>Estoy muy dedicada a estudiar programación para poder tener mi primer empleo 
+                    en el mundo IT. Estoy profundizando
+                    en Front end con Angular. Estudio de forma autodidacta y formo parte de grupo en ID for Ideas 
+                    realizando un proyecto en conjunto. <br/>
+                     Mi meta es formar parte de una empresa que me otorgue estabilidad laboral,
+                    donde pueda aplicar mis conocimientos para el
+                     crecimiento laboral, personal e intelectual.<br/>
+                  Vivo en Capilla del Monte,Córdoba con mi pareja
+                  y mis tres hijos. Tengo 43 años.
+                  Siempre me gustaron las actividades físicas, las artes y manualidades (diferentes danzas, tejer ,
+                  dibujo...).
+                  Creo que gran parte del crecimiento radica en
+                  el trabajo en equipo y busco siempre la union de la técnica
+                  con la creatividad. 
+                  
+                </p>
+          </div>
+    </div>
 
-    <section class="grid2-c">
-      <div class="presentacion">
-        <h1>Caprioglio Magdalena</h1>
-        <br>
-        <h3><b>Full-Stack Developer Jr.</b></h3>
-      </div>
+    <div class="col-7">
+        <br/>
+        <br/>
+        <h1 >Magdalena<br/>Caprioglio </h1>
+         <br>
+        <h4>Desarrolladora Web Front end</h4>
+        <div id="mail"><img src="./assets/mail.png" alt="logoMail" width="18rem">maquicapri@gmail.com</div>
+             <br/>
+                  <br/>
 
-      <div class="cajas4-5-c">
-        <div class="caja4-c">
-          <h3>Habilidades</h3>
-          <br>
-          Trabajo en equipo<br>
-          Responsabilidad<br>
-          Creatividad<br>
-          Compromiso
-        </div>
+            <div class="educacion">
+              
+                 <app-experiencia></app-experiencia>  
+   
+            </div> 
+           <br/> 
+          <h4>Conocimientos:</h4>
+          <ul>
+            <li>Html</li><li>Css</li><li>JavaScript</li>
+            <li>Bootstrap</li><li>Typescript </li><li>Angular</li><li>Github></li><li>Figma</li>
+            <li>MySQL</li><li>Java</li>
+         </ul>
+              
+                  <p><u>Idioma:</u> Inglés nivel básico A2</p>
+             <br/>
+            <h4>Habilidades:</h4>
+            <ul>
+               <li>Trabajo en equipo<br></li>
+               <li>Responsabilidad<br></li>
+               <li>Creatividad<br></li>
+               <li>Compromiso</li>
+            </ul>
+            <br/>
+    </div>
+       <div><button type="button" class="button" class="btn btn-dark" (click)="volver()"><span>Volver</span></button></div> 
+   <br/>
+   <br/>
+   <br/>
 
-        <div class="conocimiento">
-          <h3>Conocimientos</h3>
-          <br>
-          <p>Html, Css, JavaScript, Bootstrap,<br>
-            Typescript, Angular, Figma,  Java, <br>
-            MySQL
-          </p>
-
-          <br>
-          <p>Idioma: Inglés nivel básico</p>
-        </div>
-      </div>
-      <div class="educacion">
-
-        <app-experiencia></app-experiencia>
-
-      </div>
-    </section>
-  </article>
-
-  <div class="botonVolver">
-    <button type="button" class="boton" class="btn btn-dark" (click)="volverVista()"><span>Volver</span></button>
-  </div>
-
-</body>
+</div>
