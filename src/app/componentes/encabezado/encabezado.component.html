@@ -1,24 +1,25 @@
 <div class="container-fluid ">
   <div class="row" id="navbar">
-    <div class=" col-6 col-sm-5 col-md-6 col-lg-8 ">
+    <div class=" col-12 col-sm-9 col-md-10 col-lg-10 ">
       <img src="./assets/logoArgPro.png" style="width:5rem ;" alt="logo arg.programa">
-    <input type="button" value="color" id="color">
-    <input type="button" value="color" id="color1">
-    <input type="button" value="color" id="color2">
-  </div>
-    <div class="col-3 col-sm-4 col-md-3 col-lg-2" id="logos">
-
-        <a class="logoGit" href='http://github.com/MaquiCapri'><img src="./assets/github-brands.png"
-            style="width:2rem ;" id="git" alt="logoGit"></a>
-        <a class="logoLinkedin" href='https://www.linkedin.com/in/maqui-caprioglio-b0aa8086/'><img
-            src="./assets/linkedin-brands.png" style="width:2rem ;" id="link" alt="logoLinkedin"></a>
-      
+      <input type="button" value="color" id="color">
+      <input type="button" value="color" id="color1">
+      <input type="button" value="color" id="color2">
     </div>
-    <div class="col-3 col-sm-3 col-md-3 col-lg-2 " id="login1">
+    <div class="col-12 col-sm-3 col-md-2 col-lg-2" id="logos">
 
-      <button type="button" id="login" (click)="irLogin()" *ngIf="!isLogged"><span>Ingresar</span></button>
+      <a class="logoGit" href='http://github.com/MaquiCapri'><img src="./assets/github-brands.png" style="width:1.5rem ;"
+          id="git" alt="logoGit"></a>
+      <a class="logoLinkedin" href='https://www.linkedin.com/in/maqui-caprioglio-b0aa8086/'><img
+          src="./assets/linkedin-brands.png" style="width:1.5rem ;" id="link" alt="logoLinkedin"></a>
+      <input type="button" id="login" value="Iniciar" (click)="irLogin()" *ngIf="!isLogged">
+
+    </div>
+    <!-- <div class="col-3 col-sm-3 col-md-3 col-lg-2 " id="login1"> 
+
+      <input type="button" id="login" value="Iniciar sesión" (click)="irLogin()"  *ngIf="!isLogged">
       <button type="button" id="login" (click)="onlogOut()" *ngIf="isLogged"><span>Cerrar sesión</span></button>
-    </div>
+     </div> -->
   </div>
 </div>
 

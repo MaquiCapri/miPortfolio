@@ -1,124 +1,100 @@
-#navbar{
+#navbar {
   background-color: #a1a0a0;
 }
-#logos{
+
+#logos {
   display: inline-flex;
   cursor: pointer;
-  margin-top: 8px;  
- }
 
-#git{
-  margin-left: 15px; 
-  }
-  #link{
-    margin-left: 15px;
-  }
+}
 
- #login { 
-       margin-top: 8px;  
-      background: rgb(23, 32, 42);
-      color: #fcfcfc;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 17px;
-      border: none;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: 1s ease all;
-      border-radius: 5px;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-    }
-     #login1{ 
-       text-align: left; 
-     } 
-    
-     #login span { 
-      position: relative;
-      z-index: 2;
-    
-    }
-    
-    #login::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: rgb(31, 97, 141);
-      position: absolute;
-      z-index: 1;
-      top: -80px;
-      left: 0;
-      transition: 1s ease all;
-    
-    }
-    
-   #login:hover::after {
-      top: 0;
-     } 
-     #color{
-      background: #1F4761; 
-      border-radius: 110px;
-      border: none;
-      color: beige;
-      height: 40px;
-      margin: 5px;
-     }
-     #color1{
-      background: #712167;
-      border-radius: 110px;
-      border: none;
-      color: beige;
-      height: 40px;
-      margin: 5px;
+#git {
+  margin: 5px;
+  margin-top: 15px;
+}
 
-     }
+#link {
+  margin: 5px;
+  margin-top: 15px;
+}
 
-     #color2{
-      background: #6eafa4;
-      border-radius: 110px;
-      border: none;
-      color: beige;
-      margin: 5px;
-      height: 40px;
-     }
 
-     #nav{
-       background-image: url("/assets/fondoAzu.png"); 
-      height: 220px;
-       }
-     
-  
-      .foto img {
-      width: 170px;
-      height: 160px;
-      margin-top: 20px;
-      border-radius: 400px;
-      box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-    }
-    #img{
-      text-align: center;
-    }
-    
-    #name {
-       height: 80%; 
-       width: 50%; 
-      box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.9);
-      border-radius: 10px;
-      background: #fcfcfc;
-      border: 4px solid rgb(23, 32, 42);
-      text-align: center;
-      box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
-    margin: 20px;
-    }
-    
-      h3 {
-      font-size: 30px;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 900;
-      padding-top: 20px;
-     }
-    
-     h4 {
-      font-family: 'Nunito', sans-serif;
-      
-    }
+#login {
+  margin: 5px;
+  margin-top: 15px;
+  background: rgb(23, 32, 42);
+  color: whitesmoke;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 30px;
+}
+
+#color {
+  background: #1F4761;
+  border-radius: 110px;
+  border: none;
+  color: beige;
+  height: 40px;
+  margin: 5px;
+}
+
+#color1 {
+  background: #712167;
+  border-radius: 110px;
+  border: none;
+  color: beige;
+  height: 40px;
+  margin: 5px;
+}
+
+#color2 {
+  background: #6eafa4;
+  border-radius: 110px;
+  border: none;
+  color: beige;
+  margin: 5px;
+  height: 40px;
+}
+
+#nav {
+  background-image: url("/assets/fondoAzu.png");
+  height: 220px;
+}
+
+.foto img {
+  width: 170px;
+  height: 160px;
+  margin-top: 20px;
+  border-radius: 400px;
+  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+}
+
+#img {
+  text-align: center;
+}
+
+#name {
+  height: 80%;
+  width: 50%;
+  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  background: #fcfcfc;
+  border: 4px solid rgb(23, 32, 42);
+  text-align: center;
+  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+  margin: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  padding-top: 20px;
+}
+
+h4 {
+  font-family: 'Nunito', sans-serif;
+}
+
