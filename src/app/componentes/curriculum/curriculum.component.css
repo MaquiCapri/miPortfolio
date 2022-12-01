@@ -1,18 +1,4 @@
-
-
-.col-5{
-    padding: 80px;
-    background-color: rgb(175, 175, 174);
-}
-
-.col-7 h1{
-    margin-left: 0px;
-  
-}
-
-@media (max-width: 765px) {
-   .col-5{
-    padding: 10px;
-   } 
-
+.curriculum{
+    border: 2px solid #17252A;
+    color: rgb(244, 240, 255);
 }
