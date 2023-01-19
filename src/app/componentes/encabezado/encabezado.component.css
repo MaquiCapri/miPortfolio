@@ -5,28 +5,23 @@
 #logos {
   display: inline-flex;
   cursor: pointer;
-
 }
 
 #git {
   margin: 5px;
   margin-top: 15px;
-  width: 32px;
-   
+  width: 32px; 
   height: 32px;
   border-collapse: collapse;
-
 }
 
 #link {
   margin: 5px;
   margin-top: 15px;
-  width: 32px;
-   
+  width: 32px;  
   height: 32px;
   border-collapse: collapse;
 }
-
 
 #login {
   margin: 5px;
@@ -68,7 +63,6 @@
 }
 
 #nav {
-  /* background-image: url("/assets/fondoAzu.png"); */
   height: 220px;
 }
 
